@@ -24,7 +24,7 @@ if (NOT TinyXML_FOUND)
   ExternalProject_Add(tinyxml-2.6.2
     PREFIX tinyxml-2.6.2
     # URL https://downloads.sourceforge.net/project/tinyxml/tinyxml/2.6.2/tinyxml_2_6_2.tar.gz
-    URL ${CMAKE_SYSROOT}/../tros_ws/src/tros_achieve_3rd/tinyxml_2_6_2.tar.gz
+    URL ${CMAKE_CURRENT_BINARY_DIR}/../../src/tros_achieve_3rd/tinyxml_2_6_2.tar.gz
     URL_MD5 c1b864c96804a10526540c664ade67f0
     CMAKE_ARGS
       -DBUILD_SHARED_LIBS=ON
